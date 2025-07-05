@@ -1,16 +1,146 @@
 {
     "atomType": "Molecule",
-    "name": "shelf 40x11",
+    "name": "shelf-40x11",
     "x": 0,
     "y": 0,
     "uniqueID": "54f36822-7f65-4db4-b17c-ac4cf5fc5bed",
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "matDepth",
+            "ioValue": 12.7
+        },
+        {
+            "name": "Shelf x",
+            "ioValue": 279.4
+        },
+        {
+            "name": "Shelf y",
+            "ioValue": 1016
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "6c8b367d-772e-46d6-a680-181b571199f7",
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "335444e2-79a7-4e90-a3cd-281195b78dd8"
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Input",
+            "name": "matDepth",
+            "x": 0.025384615384615384,
+            "y": 0.6063569682151589,
+            "uniqueID": "088858c5-2d2b-4a93-9658-c6867e548dd6",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Shelf x",
+            "x": 0.025384615384615384,
+            "y": 0.4278728606356968,
+            "uniqueID": "ffe0dec2-1719-41a6-9688-f39a62eda9cc",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Shelf y",
+            "x": 0.025384615384615384,
+            "y": 0.49877750611246946,
+            "uniqueID": "0b48f346-aa42-4335-b65f-540d27db1c69",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.20988538681948424,
+            "y": 0.21271393643031783,
+            "uniqueID": "37bb9f5b-07c9-4135-a4c7-158aa6cfa3ca",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 279.4
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 1016
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.3853868194842407,
+            "y": 0.42542787286063566,
+            "uniqueID": "335444e2-79a7-4e90-a3cd-281195b78dd8",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "37bb9f5b-07c9-4135-a4c7-158aa6cfa3ca"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 12.7
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": "088858c5-2d2b-4a93-9658-c6867e548dd6",
+            "ap2ID": "335444e2-79a7-4e90-a3cd-281195b78dd8"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": "ffe0dec2-1719-41a6-9688-f39a62eda9cc",
+            "ap2ID": "37bb9f5b-07c9-4135-a4c7-158aa6cfa3ca"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": "0b48f346-aa42-4335-b65f-540d27db1c69",
+            "ap2ID": "37bb9f5b-07c9-4135-a4c7-158aa6cfa3ca"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "37bb9f5b-07c9-4135-a4c7-158aa6cfa3ca",
+            "ap2ID": "335444e2-79a7-4e90-a3cd-281195b78dd8"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "335444e2-79a7-4e90-a3cd-281195b78dd8",
+            "ap2ID": "6c8b367d-772e-46d6-a680-181b571199f7"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
