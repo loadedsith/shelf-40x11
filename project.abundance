@@ -7,19 +7,19 @@
     "ioValues": [
         {
             "name": "matDepth",
-            "ioValue": 12.7
+            "ioValue": 0.25
         },
         {
             "name": "Shelf x",
-            "ioValue": 279.4
+            "ioValue": 11
         },
         {
             "name": "Shelf y",
-            "ioValue": 1016
+            "ioValue": 40
         },
         {
             "name": "tool diameter",
-            "ioValue": 6.35
+            "ioValue": 0.25
         },
         {
             "name": "passes",
@@ -27,11 +27,11 @@
         },
         {
             "name": "xy speed",
-            "ioValue": 6000
+            "ioValue": 157.4803
         },
         {
             "name": "name",
-            "ioValue": 10
+            "ioValue": "Shelf"
         },
         {
             "name": "cut through",
@@ -94,11 +94,11 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 279.4
+                    "ioValue": 11
                 },
                 {
                     "name": "y length",
-                    "ioValue": 1016
+                    "ioValue": 40
                 }
             ],
             "description": "Creates a new rectangle."
@@ -116,45 +116,10 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 12.7
+                    "ioValue": 0.25
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Gcode",
-            "name": "Gcode",
-            "x": 0.6590257879656161,
-            "y": 0.6136919315403423,
-            "uniqueID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0",
-            "ioValues": [
-                {
-                    "name": "Geometry",
-                    "ioValue": "335444e2-79a7-4e90-a3cd-281195b78dd8"
-                },
-                {
-                    "name": "Tool Size",
-                    "ioValue": 6.35
-                },
-                {
-                    "name": "Passes",
-                    "ioValue": 4
-                },
-                {
-                    "name": "Speed",
-                    "ioValue": 6000
-                },
-                {
-                    "name": "Cut Through",
-                    "ioValue": 1
-                },
-                {
-                    "name": "Part Name",
-                    "ioValue": "shelf-40x11"
-                }
-            ],
-            "description": "Generates Maslow gcode from the input geometry.",
-            "partName": "shelf-40x11"
         },
         {
             "atomType": "Input",
@@ -242,51 +207,9 @@
             "ap2Primary": false,
             "ap1ID": "335444e2-79a7-4e90-a3cd-281195b78dd8",
             "ap2ID": "6c8b367d-772e-46d6-a680-181b571199f7"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Geometry",
-            "ap2Primary": false,
-            "ap1ID": "335444e2-79a7-4e90-a3cd-281195b78dd8",
-            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "Tool Size",
-            "ap2Primary": false,
-            "ap1ID": "40cf5b8a-de73-46f7-8db2-71e7417f0ccc",
-            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "Passes",
-            "ap2Primary": false,
-            "ap1ID": "dc60123c-c09b-4fc1-8d02-2caf2e8d0a92",
-            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "Speed",
-            "ap2Primary": false,
-            "ap1ID": "bbd5dff3-c535-4bd9-85e7-7a4068cfe8f7",
-            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "Part Name",
-            "ap2Primary": false,
-            "ap1ID": "51cf9c1b-eaf5-4307-83bc-9fea0c913ace",
-            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "Cut Through",
-            "ap2Primary": false,
-            "ap1ID": "52c1a273-37ef-44ef-8fe8-cb386782450f",
-            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
         }
     ],
-    "unitsKey": "MM",
+    "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": [],
     "filetypeVersion": 1
