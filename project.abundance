@@ -18,8 +18,24 @@
             "ioValue": 1016
         },
         {
-            "name": "Input (1)",
+            "name": "tool diameter",
+            "ioValue": 6.35
+        },
+        {
+            "name": "passes",
+            "ioValue": 4
+        },
+        {
+            "name": "xy speed",
+            "ioValue": 6000
+        },
+        {
+            "name": "name",
             "ioValue": 10
+        },
+        {
+            "name": "cut through",
+            "ioValue": 1
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -28,8 +44,8 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
+            "x": 0.9484240687679083,
+            "y": 0.3960880195599022,
             "uniqueID": "6c8b367d-772e-46d6-a680-181b571199f7",
             "ioValues": [
                 {
@@ -90,8 +106,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.3853868194842407,
-            "y": 0.42542787286063566,
+            "x": 0.45415472779369626,
+            "y": 0.3471882640586797,
             "uniqueID": "335444e2-79a7-4e90-a3cd-281195b78dd8",
             "ioValues": [
                 {
@@ -122,11 +138,11 @@
                 },
                 {
                     "name": "Passes",
-                    "ioValue": 6
+                    "ioValue": 4
                 },
                 {
                     "name": "Speed",
-                    "ioValue": 500
+                    "ioValue": 6000
                 },
                 {
                     "name": "Cut Through",
@@ -142,10 +158,50 @@
         },
         {
             "atomType": "Input",
-            "name": "Input (1)",
+            "name": "tool diameter",
             "x": 0.025384615384615384,
-            "y": 0.8166259168704156,
+            "y": 0.7041564792176039,
             "uniqueID": "40cf5b8a-de73-46f7-8db2-71e7417f0ccc",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "passes",
+            "x": 0.025384615384615384,
+            "y": 0.7921760391198044,
+            "uniqueID": "dc60123c-c09b-4fc1-8d02-2caf2e8d0a92",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "xy speed",
+            "x": 0.025384615384615384,
+            "y": 0.9095354523227385,
+            "uniqueID": "bbd5dff3-c535-4bd9-85e7-7a4068cfe8f7",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "name",
+            "x": 0.025384615384615384,
+            "y": 0.35207823960880197,
+            "uniqueID": "51cf9c1b-eaf5-4307-83bc-9fea0c913ace",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "string"
+        },
+        {
+            "atomType": "Input",
+            "name": "cut through",
+            "x": 0.025384615384615384,
+            "y": 0.8557457212713936,
+            "uniqueID": "52c1a273-37ef-44ef-8fe8-cb386782450f",
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
@@ -192,6 +248,41 @@
             "ap2Name": "Geometry",
             "ap2Primary": false,
             "ap1ID": "335444e2-79a7-4e90-a3cd-281195b78dd8",
+            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Tool Size",
+            "ap2Primary": false,
+            "ap1ID": "40cf5b8a-de73-46f7-8db2-71e7417f0ccc",
+            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Passes",
+            "ap2Primary": false,
+            "ap1ID": "dc60123c-c09b-4fc1-8d02-2caf2e8d0a92",
+            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Speed",
+            "ap2Primary": false,
+            "ap1ID": "bbd5dff3-c535-4bd9-85e7-7a4068cfe8f7",
+            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Part Name",
+            "ap2Primary": false,
+            "ap1ID": "51cf9c1b-eaf5-4307-83bc-9fea0c913ace",
+            "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Cut Through",
+            "ap2Primary": false,
+            "ap1ID": "52c1a273-37ef-44ef-8fe8-cb386782450f",
             "ap2ID": "e7f0d2eb-0f74-4db1-9800-5524c2d2b6e0"
         }
     ],
